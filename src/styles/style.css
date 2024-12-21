@@ -6,6 +6,9 @@ body {
   background-color: aquamarine;
 }
 
+#map {
+  height: 180px;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
