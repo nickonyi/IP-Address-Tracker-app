@@ -28,12 +28,24 @@
 
   <body>
     <div class="ip-container">
-      <div class="ip-header"></div>
+      <div class="ip-header bg-hero-desktop w-full h-64">
+        <h1>IP Address Tracker</h1>
+        <div class="flex w-80">
+          <input
+            type="text"
+            id="name"
+            placeholder="Search for any IP address or domain"
+            class="px-4 w-full border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <div class="bg-red-300 h-10 w-10 py-8">
+            <img src="../dist/assets/images/icon-arrow.svg" alt="" />
+          </div>
+        </div>
+      </div>
       <div id="map"></div>
     </div>
 
-    h2 IP Address Tracker Search for any IP address or domain IP Address
-    Location Timezone UTC
+    Address Location Timezone UTC
     <!-- add offset value dynamically using the API -->
     ISP
 
