@@ -28,37 +28,41 @@
 
   <body>
     <div class="ip-container">
-      <div class="ip-header bg-hero-desktop w-full h-64">
+      <div
+        class="ip-header bg-hero-desktop w-full h-64 flex justify-center items-center flex-col"
+      >
         <h1>IP Address Tracker</h1>
         <div class="flex w-96">
-          <input
-            type="text"
-            id="name"
-            placeholder="Search for any IP address or domain"
-            class="px-4 w-full border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-          />
-          <div
-            class="bg-very-dark-gray py-3 w-12 rounded-r-md flex justify-center items-center"
-          >
-            <img src="/assets/images/icon-arrow.svg" class="h-3 w-3" />
+          <div class="flex">
+            <input
+              type="text"
+              id="name"
+              placeholder="Search for any IP address or domain"
+              class="px-4 w-full border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+            />
+            <div
+              class="bg-very-dark-gray py-3 w-12 rounded-r-md flex justify-center items-center"
+            >
+              <img src="/assets/images/icon-arrow.svg" class="h-3 w-3" />
+            </div>
           </div>
-          <div class="ip-info-card">
-            <div>
-              <p id="ip-text">IP ADDRESS</p>
-              <p id="ip-text-number">192.123.123.121</p>
-            </div>
-            <div>
-              <p id="ip-text">Location</p>
-              <p id="ip-text-number">Brooklyn,NY 1001</p>
-            </div>
-            <div>
-              <p id="ip-text">Timezone</p>
-              <p id="ip-text-number">UTC-5.00</p>
-            </div>
-            <div>
-              <p id="ip-text">ISP</p>
-              <p id="ip-text-number">SpaceX starlink</p>
-            </div>
+        </div>
+        <div class="ip-info-card">
+          <div>
+            <p id="ip-text">IP ADDRESS</p>
+            <p id="ip-text-number">192.123.123.121</p>
+          </div>
+          <div>
+            <p id="ip-text">Location</p>
+            <p id="ip-text-number">Brooklyn,NY 1001</p>
+          </div>
+          <div>
+            <p id="ip-text">Timezone</p>
+            <p id="ip-text-number">UTC-5.00</p>
+          </div>
+          <div>
+            <p id="ip-text">ISP</p>
+            <p id="ip-text-number">SpaceX starlink</p>
           </div>
         </div>
       </div>
