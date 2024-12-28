@@ -8,7 +8,7 @@ body {
 }
 
 #map {
-  height: 180px;
+  height: 100vh;
 }
 .attribution {
   font-size: 11px;
