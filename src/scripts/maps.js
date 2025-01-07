@@ -1,5 +1,10 @@
-export const createMap = () => {
-  let map = L.map('map').setView([-1.29524, 36.81233], 13);
+import { fetchIPGeolocation } from './geolocator';
+
+export const createMap = async () => {
+  const coordinatesData = await fetchIPGeolocation('');
+  const coordinates = coordinatesData.location;
+
+  let map = L.map('map').setView([coordinates.lat, coordinates.lng], 15);
 
   const mapTile = L.tileLayer(
     'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -10,18 +15,10 @@ export const createMap = () => {
     },
   ).addTo(map);
 
-  let marker = L.marker([-1.29524, 36.81233]).addTo(map);
-
-  let circle = L.circle([-1.29524, 36.81233], {
-    color: 'yellow',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 500,
-  }).addTo(map);
+  let marker = L.marker([coordinates.lat, coordinates.lng]).addTo(map);
 
   return {
     mapTile,
     marker,
-    circle,
   };
 };
