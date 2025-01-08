@@ -4,7 +4,7 @@ export const createMap = async () => {
   const coordinatesData = await fetchIPGeolocation('');
   const coordinates = coordinatesData.location;
 
-  let map = L.map('map').setView([coordinates.lat, coordinates.lng], 15);
+  let map = L.map('map').setView([coordinates.lat, coordinates.lng], 14);
 
   const mapTile = L.tileLayer(
     'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
