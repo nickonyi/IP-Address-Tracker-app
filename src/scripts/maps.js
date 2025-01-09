@@ -1,7 +1,7 @@
 import { fetchIPGeolocation } from './geolocator';
 
-export const createMap = async () => {
-  const coordinatesData = await fetchIPGeolocation('');
+export const createMap = async (ip) => {
+  const coordinatesData = await fetchIPGeolocation(ip);
   const coordinates = coordinatesData.location;
 
   let map = L.map('map').setView([coordinates.lat, coordinates.lng], 14);
