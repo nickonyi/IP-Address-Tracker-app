@@ -1,9 +1,14 @@
+import { generateIpInfoCard } from './domStuff';
 import { fetchIPGeolocation } from './geolocator';
 
 let map = '';
+const infoCardContainer = document.querySelector('#ip-info-card');
+console.log(infoCardContainer);
 
 export const createMap = async (ip) => {
   const coordinatesData = await fetchIPGeolocation(ip);
+  generateIpInfoCard(infoCardContainer, coordinatesData);
+
   const coordinates = coordinatesData.location;
 
   if (map) {
