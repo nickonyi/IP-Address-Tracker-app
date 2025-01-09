@@ -608,6 +608,10 @@ video {
   width: 100%;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -632,11 +636,6 @@ video {
 .rounded-r-2xl{
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-}
-
-.rounded-r-md{
-  border-top-right-radius: 0.375rem;
-  border-bottom-right-radius: 0.375rem;
 }
 
 .border{
@@ -770,11 +769,6 @@ body {
   .lg\:gap-x-16{
     -moz-column-gap: 4rem;
          column-gap: 4rem;
-  }
-
-  .lg\:rounded-l-md{
-    border-top-left-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
   }
 
   .lg\:py-2{
