@@ -1,4 +1,6 @@
 export const generateIpInfoCard = (elementContainer, data) => {
+  elementContainer.innerHTML = '';
+
   elementContainer.appendChild(createSection('Ip address', data.ip));
   elementContainer.appendChild(createSection('Location', data.location.city));
   elementContainer.appendChild(
