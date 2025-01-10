@@ -7,6 +7,8 @@ console.log(infoCardContainer);
 
 export const createMap = async (ip) => {
   const coordinatesData = await fetchIPGeolocation(ip);
+  console.log(coordinatesData);
+
   generateIpInfoCard(infoCardContainer, coordinatesData);
 
   const coordinates = coordinatesData.location;

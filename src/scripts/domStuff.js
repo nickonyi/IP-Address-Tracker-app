@@ -2,11 +2,16 @@ export const generateIpInfoCard = (elementContainer, data) => {
   elementContainer.innerHTML = '';
 
   elementContainer.appendChild(createSection('Ip address', data.ip));
-  elementContainer.appendChild(createSection('Location', data.location.city));
+  elementContainer.appendChild(
+    createSection(
+      'Location',
+      `${data.location.city}, ${data.location.country}`,
+    ),
+  );
   elementContainer.appendChild(
     createSection('Timezone', data.location.timezone),
   );
-  elementContainer.appendChild(createSection('ISP', data.isp));
+  elementContainer.appendChild(createSection('ISP', data.isp, false));
 };
 
 const createSection = (title, value, hasBorder = true) => {
