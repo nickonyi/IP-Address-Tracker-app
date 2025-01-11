@@ -3,11 +3,9 @@ import { fetchIPGeolocation } from './geolocator';
 
 let map = '';
 const infoCardContainer = document.querySelector('#ip-info-card');
-console.log(infoCardContainer);
 
 export const createMap = async (ip) => {
   const coordinatesData = await fetchIPGeolocation(ip);
-  console.log(coordinatesData);
 
   generateIpInfoCard(infoCardContainer, coordinatesData);
 
