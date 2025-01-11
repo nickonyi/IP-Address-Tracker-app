@@ -18,5 +18,3 @@ searchBtn.addEventListener('click', () => {
       .catch((err) => console.error('Error:', err));
   }
 });
-
-console.log(isValidIPAddress('192.1.1..22'));
