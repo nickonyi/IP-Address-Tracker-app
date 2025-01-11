@@ -26,9 +26,4 @@ export const createMap = async (ip) => {
   ).addTo(map);
 
   let marker = L.marker([coordinates.lat, coordinates.lng]).addTo(map);
-
-  return {
-    mapTile,
-    marker,
-  };
 };
