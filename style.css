@@ -592,12 +592,12 @@ video {
   width: 3rem;
 }
 
-.w-2\/3{
-  width: 66.666667%;
-}
-
 .w-3{
   width: 0.75rem;
+}
+
+.w-3\/4{
+  width: 75%;
 }
 
 .w-72{
@@ -640,10 +640,6 @@ video {
 
 .border{
   border-width: 1px;
-}
-
-.border-r{
-  border-right-width: 1px;
 }
 
 .border-gray-300{
@@ -746,6 +742,26 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+@media screen and (max-width: 480px) {
+  #ip-title {
+    font-size: 12px;
+  }
+
+  .info-details {
+    margin-block: 15px;
+  }
+
+  #ip-info-card {
+    text-align: center;
+  }
+
+  #ip-info {
+    font-weight: bold;
+    color: hsl(0, 0%, 17%);
+    font-size: 18px;
+  }
+}
+
 .focus\:border-indigo-500:focus{
   --tw-border-opacity: 1;
   border-color: rgb(99 102 241 / var(--tw-border-opacity, 1));
@@ -787,6 +803,15 @@ body {
   .lg\:gap-x-16{
     -moz-column-gap: 4rem;
          column-gap: 4rem;
+  }
+
+  .lg\:border-r{
+    border-right-width: 1px;
+  }
+
+  .lg\:border-gray-300{
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
   }
 
   .lg\:py-2{
