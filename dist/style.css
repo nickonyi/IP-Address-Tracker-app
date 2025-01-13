@@ -712,11 +712,29 @@ video {
 }
 
 body {
-  font-family: 'Space Grotesk', serif;
+  font-family: 'Red Hat Text', serif;
 }
 
 #map {
   height: 100vh;
+}
+
+#ip-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 2px;
+}
+
+#ip-info {
+  font-weight: bold;
+  color: hsl(0, 0%, 17%);
+  font-size: 18px;
+}
+
+.leaflet-marker-icon {
+  color: hsl(0, 0%, 17%);
 }
 
 .attribution {
