@@ -35,3 +35,20 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (max-width: 480px) {
+  #ip-title {
+    font-size: 12px;
+  }
+  .info-details {
+    margin-block: 15px;
+  }
+  #ip-info-card {
+    text-align: center;
+  }
+  #ip-info {
+    font-weight: bold;
+    color: hsl(0, 0%, 17%);
+    font-size: 18px;
+  }
+}

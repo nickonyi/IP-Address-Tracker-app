@@ -9,15 +9,17 @@ export const generateIpInfoCard = (elementContainer, data) => {
     ),
   );
   elementContainer.appendChild(
-    createSection('Timezone', data.location.timezone),
+    createSection('Timezone', ` UTC  ${data.location.timezone}`),
   );
   elementContainer.appendChild(createSection('ISP', data.isp, false));
 };
 
 const createSection = (title, value, hasBorder = true) => {
   const section = document.createElement('div');
+  section.classList.add('info-details');
 
-  if (hasBorder) section.classList.add('border-r', 'border-gray-300', 'pr-8');
+  if (hasBorder)
+    section.classList.add('lg:border-r', 'lg:border-gray-300', 'pr-8');
 
   const titleElement = document.createElement('p');
   titleElement.id = 'ip-title';
